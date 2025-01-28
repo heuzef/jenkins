@@ -32,7 +32,8 @@ pipeline {
               input {
                 message "Proceed to push to main"
                 ok "Yes"
-                }    
+                submitter ""
+                }
             }
           }
           stage('Pushing and Merging'){
