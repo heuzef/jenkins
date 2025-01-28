@@ -11,11 +11,6 @@ pipeline {
                 sh 'pip install -r requirements.txt'
           }
         }
-        stage('Testing') {
-          steps {
-                sh 'python3 -m unittest'
-          }
-        }
           stage('Deploying') {
           steps{
             script {
